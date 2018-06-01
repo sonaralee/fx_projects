@@ -1,4 +1,4 @@
-package challenge;
+package testing;
 
 public class Controller {
 }

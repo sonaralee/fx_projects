@@ -1,4 +1,4 @@
-package sample;
+package todo;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Slider;

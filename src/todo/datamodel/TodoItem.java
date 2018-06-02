@@ -1,7 +1,6 @@
 package todo.datamodel;
 
 import java.time.LocalDate;
-import java.util.Date;
 
 public class TodoItem {
     private String shortDescription;
@@ -36,5 +35,10 @@ public class TodoItem {
 
     public void setDeadline(LocalDate deadline) {
         this.deadline = deadline;
+    }
+
+    @Override
+    public String toString() {
+        return shortDescription;
     }
 }

@@ -17,6 +17,13 @@ public class DialogController {
     @FXML
     private DatePicker deadlinePicker;
 
+    public void populateForEdit(TodoItem item) {
+        //TodoItem item = new TodoItem(TodoData.getInstance())
+        shortDesc.setText(item.getShortDescription());
+        detailsArea.setText(item.getDetails());
+        deadlinePicker.setValue(item.getDeadline());
+    }
+
     public TodoItem processResults() {
         String shortDescription = shortDesc.getText().trim();
         String details = detailsArea.getText().trim();
@@ -26,5 +33,11 @@ public class DialogController {
                                         deadline);
         TodoData.getInstance().addTodoItem(newItem);
         return newItem;
+    }
+
+    public void processEdit(TodoItem item) {
+        item.setDeadline(deadlinePicker.getValue());
+        item.setDetails(detailsArea.getText());
+        item.setShortDescription(shortDesc.getText());
     }
 }

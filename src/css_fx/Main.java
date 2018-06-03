@@ -12,7 +12,7 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass()
                                 .getResource("sample.fxml"));
-        setUserAgentStylesheet(STYLESHEET_CASPIAN);
+        //setUserAgentStylesheet(STYLESHEET_CASPIAN);
 
         primaryStage.setTitle("Hello JavaFX!");
         primaryStage.setScene(new Scene(root, 600, 275));

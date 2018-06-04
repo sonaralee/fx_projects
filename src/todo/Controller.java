@@ -32,8 +32,10 @@ public class Controller {
     private Label deadlineLabel;
     @FXML
     private BorderPane mainBorderPane;
+
     @FXML
     private ContextMenu listContextMenu;
+
     @FXML
     private ToggleButton filterButton;
 
